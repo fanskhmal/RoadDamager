@@ -2,9 +2,12 @@ package com.example.newsreport;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 public class AboutUsActivity extends AppCompatActivity {
 
@@ -14,6 +17,17 @@ public class AboutUsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_about_us);
 
         // Other initialization code for AboutUsActivity
+
+        TextView tvGitHubLink = findViewById(R.id.tvGitHubLink);
+        tvGitHubLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Open the GitHub profile link in the browser
+                String gitHubLink = "https://github.com/fanskhmal";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(gitHubLink));
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
