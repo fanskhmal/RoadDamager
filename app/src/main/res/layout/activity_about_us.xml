@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Team Members Section -->
+    <TextView
+        android:id="@+id/tvTeamMembersTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Members:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMember1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ahmad Fansuri Akhmal bin Masri" />
+
+    <TextView
+        android:id="@+id/tvMember2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fariq Dzul Aiman bin Jamal" />
+
+    <TextView
+        android:id="@+id/tvMember3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muhammad Mujahidin bin Ahmad Razi" />
+
+    <TextView
+        android:id="@+id/tvMember4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muhammad Idham bin Amirusham" />
+
+    <TextView
+        android:id="@+id/tvMember5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muhamad Zaqrul bin Abdul Latib" />
+
+    <!-- Course Code Section -->
+    <TextView
+        android:id="@+id/tvCourseCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Code: ICT602 Mobile Technology and Development"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Additional Information (you can add more information here if needed) -->
+    <TextView
+        android:id="@+id/tvAdditionalInfoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project Information:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvAdditionalInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed for Group Project Assignment"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
