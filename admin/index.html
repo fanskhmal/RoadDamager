@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Interface</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Admin Interface</h1>
+
+  <!-- Form to input news information and dates -->
+  <div class="form-container">
+    <h2>Add News</h2>
+    <form id="news-form">
+      <label for="title">Title:</label>
+      <input type="text" id="title" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Table to display existing news data -->
+  <div class="table-container">
+    <h2>News List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody id="news-list">
+        <!-- News data will be dynamically added here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
